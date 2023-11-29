@@ -1,0 +1,33 @@
+dbt_first:
+  outputs:
+
+    dev:
+      type: postgres
+      threads: 1
+      host: localhost
+      port: 5432
+      user: postgres
+      pass: postgres
+      dbname: postgres
+      schema: jaffle
+
+    
+
+  target: dev
+
+dbt_sample:
+  outputs:
+
+    dev:
+      type: postgres
+      threads: 1
+      host: localhost
+      port: 5432
+      user: postgres
+      pass: postgres
+      dbname: postgres
+      schema: jaffle
+
+    
+
+  target: dev
